@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About Me</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="responsive.css">
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="container">
+            <div class="header__inner">
+                <div class="row">
+                <div class="col-md-6"><img src="https://s3-us-west-1.amazonaws.com/zerable/dwarfhead.png" alt="Home" height="70px" widith="70px">
+                </div>
+                <div class="col-md-6 text-right" font-color:white;>    
+                <h1>Wa Kwan Tsoi</h1>
+                <h3>Front-end Ninja</h3>
+                </div>
+                </div>
+            </div>
+            </div>    
+        </header>    
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">Current</a></li>
+        <li class="nav__item"><a href="#">Experience</a></li>
+        <li class="nav__item"><a href="#">Skills</a></li>
+        <li class="nav__item"><a href="#">Academic</a></li>
+      </ul>
+    </nav>
+
+      <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="img-responsive" src="https://s3-us-west-1.amazonaws.com/zerable/zerablemeat.png" alt="Zerable Meat APP">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Featured Work</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="https://s3.amazonaws.com/sfexpress.images/sfe_images/sf+logo.png">
+                    <section>
+                    <h3>Product Marketing Specialist</h3>
+                    <p>Provided the digital marketing support of social media marketing and SEO tool to the E-Commerce website <a href="https://www.sfht.com">SFHT</a> and monitored marketing data analytics with CJ.com, and enhanced conversion paths in order to maintain inventory and product availability for SFHT, <a href="https://www.sfbuy.com">SFBuy</a>, and <a href="https://www.sfbest.com">SFBest</a></p>
+                    </section>
+                    
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src="https://s3-us-west-1.amazonaws.com/zerable/aliresearch.png">
+                    <section>
+                    <h3>Research Editor of <a href="https://www.aliresearch.com">Aliresearch</a></h3>
+                    <p>Collected and analyzed specialized data and provide personal insights of the technological trend, e.g. the potential marketplace of Evernote. Identified Silicon Valley trendsetter ideas by researching industry and related events
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="https://s3-us-west-1.amazonaws.com/zerable/Suning-logo.jpg">
+                    <section>
+                    <h3>Management Trainee</h3>
+                    <p>Evaluated competitive threats such as Tmall, JD and Amazon and work with purchasing and operations teams to develop appropriate strategies; analyze category data and work adjust merchandising, pricing or purchasing tactics, incubate new E-Commerce platform <a href="https://usa.suning.com">Suning USA</a> and <a href="https://haigo.us">Haigo</a> within the context of a competitive E-Commerce environment</p>
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src="https://s3-us-west-1.amazonaws.com/zerable/ucb_logo.jpg">
+                    <section>
+                    <h3>B.A. and Research Assistant</h3>
+                    <p>Analyzed how to promote censored (Chinese) contents to mainland internet users through Instagram: strategies and best practices. Observed how dialogue/communication between Hong Kong users and Mainland users over these controversial issues, whether through weibo, WeChat, facebook, twitter, and Instagram</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toogle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+    </script>
+    </body>
+</html>
