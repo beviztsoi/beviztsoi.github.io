@@ -5,39 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>About Me</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="stylesheet" type="text/css" href="responsive.css">
         <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
-        <style>
-        @import url(http://weloveiconfonts.com/api/?family=zocial);
+        <link rel="script" href="script.js">
 
-        [class*="zocial-"]:before {
-        display: inline-block;
-        font-family: 'zocial', sans-serif;
-        text-shadow: 1px 1px 1px #aaa;
-        width: 10vw;
-        }
-
-        body {
-        font-family: 'Roboto Condensed';
-        margin: 0;
-        }
-
-        li {
-        font-size: 1vw;
-        list-style: none;
-        margin: 3vw 0;
-        padding-left: 100px;
-        }
-
-        iframe {
-            display: block;
-            margin-left: auto;
-            margin-right: auto
-        }
-    </style>
     </head>
     <body>
 
@@ -45,11 +18,15 @@
             <div class="container">
             <div class="header__inner">
                 <div class="row">
-                <div class="col-md-6"><img src="https://s3-us-west-1.amazonaws.com/zerable/dwarfhead.png" alt="Home" height="70px" widith="70px">
+                <div class="col-md-6"><img src="https://s3-us-west-1.amazonaws.com/zerable/dwarfhead.png" alt="Home" height="70" widith="70">
+                    <a id="menu" class="header__menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                        </svg>
+                    </a>
                 </div>
-                <div class="col-md-6 text-right" font-color:white;>    
-                <h1>Wa Kwan Tsoi</h1>
-                <h3><span class="zocial-android"></span>Front-end Ninja</h3>
+                <h1 class="header__title">Wa Kwan Tsoi</h1>
+                <h3 class="header__title"><span class="zocial-android"></span>Front-end Ninja</h3>
                 </div>
                 </div>
             </div>
@@ -110,31 +87,12 @@
                 </div>
             </div>
         </div>
-    <script>
-      /*
-       * Open the drawer when the menu ison is clicked.
-       */
-      var menu = document.querySelector('#menu');
-      var main = document.querySelector('main');
-      var drawer = document.querySelector('.nav');
-
-      menu.addEventListener('click', function(e) {
-        drawer.classList.toogle('open');
-        e.stopPropagation();
-      });
-      main.addEventListener('click', function() {
-        drawer.classList.remove('open');
-      });
-    </script>
+        <footer>
+            <div id="social">
+                <a href="https://twitter.com/beviztsoi" class="zocial-twitter">Twitter</a>
+                <a href="https://www.linkedin.com/in/wakwantsoi" class="zocial-linkedin">Linkedin</a>
+            </div>
+            <a href="https://github.com/beviztsoi/about_me" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+        </footer>
     </body>
-
-    <footer>
-    <div id="social">
-      <a href="https://twitter.com/beviztsoi" class="zocial-twitter">Twitter</a>
-      <a href="https://www.linkedin.com/in/wakwantsoi" class="zocial-linkedin">Linkedin</a>
-    </div>
-
-    <a href="https://github.com/beviztsoi/about_me" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
-
-  </footer>
 </html>
