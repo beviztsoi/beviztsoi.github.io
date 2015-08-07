@@ -14,7 +14,7 @@
 }
 
 
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 749px) {
   .header__logo {
     height: 48px;
     margin-right: 0.5em;
@@ -26,33 +26,6 @@
     font-size: 2em;
     vertical-align: bottom; 
     text-align: right;
-  }
-
-
-  .nav {
-    z-index: 10;
-    background-color: #fff;
-    width: 300px;
-    position: absolute;
-    /* This trasform moves the drawer off canvas. */
-    -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0);
-    /* Optionally, we animate the drawer. */
-    transition: transform 0.3s ease;
-  }
-
-
-  .nav.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-
-
-  .nav__item {
-    display: list-item;
-    border-bottom: 1px solid #E0E0E0;
-    width: 100%;
-    text-align: left;
   }
 
 
@@ -68,14 +41,68 @@
     width: 32px;
     fill: #000000;
   }
+
+
+  .mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  }
+
+
+  .mobiletap {
+    display: none;
+  }
+  
+
+  button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: 0;
+    text-indent: 200%;
+    overflow: hidden;
+    background: rgba(255,255,255,.8) url(http://i.imgur.com/vKRaKDX.png) center no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-size: 80%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    transition: all 400ms ease;
+  }
+
+  .expanded {
+      transform: rotate(90deg);
+      background-color: transparent;
+      border: 0;
+    }
+  
+
+  .mobilelist {
+    display: block;
+  }
+
+
+.mobilelist {
+  background: #fff;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  &:hover, &:active, &:focus;
+  background: darken(#eee, 3%);
+}
 }
 
-
-@media screen and (min-width: 850px) {
-  main, .header__inner, .nav, .content {
-    width: 850px;
-    margin-left: auto;
-    margin-right: auto;
+@media (max-width: 750px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
   }
 }
-
